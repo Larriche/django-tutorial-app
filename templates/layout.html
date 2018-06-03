@@ -1,0 +1,19 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <title>{% block title %}{% endblock %} | Django School</title>
+</head>
+
+<body>
+    <div class="site-container">
+        <nav>
+            <a href="{% url 'hello' %}">Home</a>
+            <a href="{% url 'courses:list' %}">Courses</a>
+        </nav>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
