@@ -1,0 +1,1 @@
+This is the django app I developed by following the Treehouse course on django basics
